@@ -15,12 +15,14 @@ import java.util.List;
 
 public class DataReader {
 
+    // Способ считывания данных о животных из файла и преобразования их в список объектов IAnimal
     public static List<IAnimal> readAnimals(String filePath) {
         List<IAnimal> animals = new ArrayList<>();
         try {
             List<String> lines = Files.readAllLines(Paths.get(filePath));
             for (String line : lines) {
                 String[] properties = line.split(",");
+                // Преобразуем строковые значение в перечисление enum
                 AnimalWeightEnum weight = AnimalWeightEnum.fromValue(properties[0]);
                 AnimalHeightEnum height = AnimalHeightEnum.fromValue(properties[1]);
                 AnimalTypeEnum type = AnimalTypeEnum.fromValue(properties[2]);
@@ -32,6 +34,7 @@ public class DataReader {
         return animals;
     }
 
+    // Метод считывания правил из файла и преобразования их в список перечислений AnimalRule
     public static List<AnimalRule> readRules(String filePath) {
         List<AnimalRule> rules = new ArrayList<>();
         try {

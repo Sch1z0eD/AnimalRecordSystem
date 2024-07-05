@@ -4,6 +4,7 @@ import sch1z0ed.animals.rules.impl.HerbivoresRule;
 import sch1z0ed.animals.rules.impl.OmnivoresNotTallRule;
 import sch1z0ed.animals.rules.impl.SmallHerbivoresOrCarnivoresRule;
 
+// Фабричный класс для создания объектов правил на основе типа правил
 public class RuleFactory {
     public static IRule getRule(AnimalRule rule) {
         return switch (rule) {

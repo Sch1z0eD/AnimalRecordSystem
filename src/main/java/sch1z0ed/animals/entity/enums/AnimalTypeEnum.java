@@ -15,6 +15,7 @@ public enum AnimalTypeEnum {
         return value;
     }
 
+    // Статический метод для получения значения перечисления из строки
     public static AnimalTypeEnum fromValue(String value) {
         for (AnimalTypeEnum type : values()) {
             if (type.getValue().equalsIgnoreCase(value)) {

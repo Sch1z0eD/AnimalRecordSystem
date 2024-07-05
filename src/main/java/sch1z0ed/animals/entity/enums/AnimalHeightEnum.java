@@ -15,6 +15,7 @@ public enum AnimalHeightEnum {
         return value;
     }
 
+    // Статический метод для получения значения перечисления из строки
     public static AnimalHeightEnum fromValue(String value) {
         for (AnimalHeightEnum height : values()) {
             if (height.getValue().equalsIgnoreCase(value)) {

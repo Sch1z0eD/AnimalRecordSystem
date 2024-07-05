@@ -5,6 +5,7 @@ import sch1z0ed.animals.entity.enums.AnimalHeightEnum;
 import sch1z0ed.animals.entity.enums.AnimalTypeEnum;
 import sch1z0ed.animals.entity.enums.AnimalWeightEnum;
 
+// Класс, представляющий животное со свойствами веса, роста и типа
 public class Animal implements IAnimal {
     private final AnimalWeightEnum weight;
     private final AnimalHeightEnum height;

@@ -5,6 +5,7 @@ import sch1z0ed.animals.rules.IRule;
 
 import java.util.List;
 
+// Класс правил для подсчета мелких и травоядных или плотоядных животных
 public class SmallHerbivoresOrCarnivoresRule implements IRule {
     @Override
     public int apply(List<IAnimal> animals) {

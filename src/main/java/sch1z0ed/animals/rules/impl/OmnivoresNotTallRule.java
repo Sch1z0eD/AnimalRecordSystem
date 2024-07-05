@@ -5,6 +5,7 @@ import sch1z0ed.animals.rules.IRule;
 
 import java.util.List;
 
+// Класс правил для подсчета всеядных животных и невысокого роста
 public class OmnivoresNotTallRule implements IRule {
     @Override
     public int apply(List<IAnimal> animals) {

@@ -15,6 +15,7 @@ public enum AnimalWeightEnum {
         return value;
     }
 
+    // Статический метод для получения значения перечисления из строки
     public static AnimalWeightEnum fromValue(String value) {
         for (AnimalWeightEnum weight : values()) {
             if (weight.getValue().equalsIgnoreCase(value)) {
