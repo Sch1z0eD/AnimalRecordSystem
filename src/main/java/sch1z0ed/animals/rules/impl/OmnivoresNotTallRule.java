@@ -1,7 +1,7 @@
-package ru.sch1z0ed.animals.rules.impl;
+package sch1z0ed.animals.rules.impl;
 
-import ru.sch1z0ed.animals.entity.IAnimal;
-import ru.sch1z0ed.animals.rules.IRule;
+import sch1z0ed.animals.entity.IAnimal;
+import sch1z0ed.animals.rules.IRule;
 
 import java.util.List;
 

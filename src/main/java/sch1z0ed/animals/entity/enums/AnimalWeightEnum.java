@@ -1,4 +1,4 @@
-package ru.sch1z0ed.animals.entity.enums;
+package sch1z0ed.animals.entity.enums;
 
 public enum AnimalWeightEnum {
     LIGHT("light"),

@@ -1,4 +1,4 @@
-package ru.sch1z0ed.animals.rules;
+package sch1z0ed.animals.rules;
 
 public enum AnimalRule {
     HERBIVORES,

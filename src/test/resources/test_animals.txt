@@ -1,0 +1,3 @@
+light,small,omnivore
+heavy,small,herbivore
+heavy,short,herbivore

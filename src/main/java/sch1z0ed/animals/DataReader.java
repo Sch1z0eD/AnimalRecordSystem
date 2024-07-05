@@ -1,11 +1,11 @@
-package ru.sch1z0ed.animals;
+package sch1z0ed.animals;
 
-import ru.sch1z0ed.animals.entity.Animal;
-import ru.sch1z0ed.animals.entity.IAnimal;
-import ru.sch1z0ed.animals.entity.enums.AnimalHeightEnum;
-import ru.sch1z0ed.animals.entity.enums.AnimalTypeEnum;
-import ru.sch1z0ed.animals.entity.enums.AnimalWeightEnum;
-import ru.sch1z0ed.animals.rules.AnimalRule;
+import sch1z0ed.animals.entity.Animal;
+import sch1z0ed.animals.entity.IAnimal;
+import sch1z0ed.animals.entity.enums.AnimalHeightEnum;
+import sch1z0ed.animals.entity.enums.AnimalTypeEnum;
+import sch1z0ed.animals.entity.enums.AnimalWeightEnum;
+import sch1z0ed.animals.rules.AnimalRule;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DataReader {
+
     public static List<IAnimal> readAnimals(String filePath) {
         List<IAnimal> animals = new ArrayList<>();
         try {

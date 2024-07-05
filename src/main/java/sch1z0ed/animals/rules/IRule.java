@@ -1,6 +1,6 @@
-package ru.sch1z0ed.animals.rules;
+package sch1z0ed.animals.rules;
 
-import ru.sch1z0ed.animals.entity.IAnimal;
+import sch1z0ed.animals.entity.IAnimal;
 
 import java.util.List;
 

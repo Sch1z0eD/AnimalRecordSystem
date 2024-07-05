@@ -1,8 +1,8 @@
-package ru.sch1z0ed.animals.rules;
+package sch1z0ed.animals.rules;
 
-import ru.sch1z0ed.animals.rules.impl.HerbivoresRule;
-import ru.sch1z0ed.animals.rules.impl.OmnivoresNotTallRule;
-import ru.sch1z0ed.animals.rules.impl.SmallHerbivoresOrCarnivoresRule;
+import sch1z0ed.animals.rules.impl.HerbivoresRule;
+import sch1z0ed.animals.rules.impl.OmnivoresNotTallRule;
+import sch1z0ed.animals.rules.impl.SmallHerbivoresOrCarnivoresRule;
 
 public class RuleFactory {
     public static IRule getRule(AnimalRule rule) {
