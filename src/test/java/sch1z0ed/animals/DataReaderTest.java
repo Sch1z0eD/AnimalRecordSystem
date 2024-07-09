@@ -13,9 +13,9 @@ public class DataReaderTest {
     public void testReadAnimals() {
         List<IAnimal> animals = DataReader.readAnimals("src/test/resources/test_animals.txt");
         assertEquals(3, animals.size());
-        assertEquals("LIGHT", animals.get(0).getWeight().name());
-        assertEquals("SMALL", animals.get(0).getHeight().name());
-        assertEquals("OMNIVORE", animals.get(0).getType().name());
+        assertEquals("LIGHT", animals.get(0).getWeight());
+        assertEquals("SMALL", animals.get(0).getHeight());
+        assertEquals("OMNIVORE", animals.get(0).getType());
     }
 
     @Test

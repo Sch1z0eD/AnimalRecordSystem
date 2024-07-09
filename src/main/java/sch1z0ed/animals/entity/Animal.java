@@ -1,34 +1,30 @@
 package sch1z0ed.animals.entity;
 
 
-import sch1z0ed.animals.entity.enums.AnimalHeightEnum;
-import sch1z0ed.animals.entity.enums.AnimalTypeEnum;
-import sch1z0ed.animals.entity.enums.AnimalWeightEnum;
-
 // Класс, представляющий животное со свойствами веса, роста и типа
 public class Animal implements IAnimal {
-    private final AnimalWeightEnum weight;
-    private final AnimalHeightEnum height;
-    private final AnimalTypeEnum type;
+    private String weight;
+    private String height;
+    private String type;
 
-    public Animal(AnimalWeightEnum weight, AnimalHeightEnum height, AnimalTypeEnum type) {
-        this.weight = weight;
-        this.height = height;
-        this.type = type;
+    public Animal(String weight, String height, String type) {
+        this.weight = weight.toUpperCase();
+        this.height = height.toUpperCase();
+        this.type = type.toUpperCase();
     }
 
     @Override
-    public AnimalWeightEnum getWeight() {
+    public String getWeight() {
         return weight;
     }
 
     @Override
-    public AnimalHeightEnum getHeight() {
+    public String getHeight() {
         return height;
     }
 
     @Override
-    public AnimalTypeEnum getType() {
+    public String getType() {
         return type;
     }
 }

@@ -2,9 +2,6 @@ package sch1z0ed.animals;
 
 import sch1z0ed.animals.entity.Animal;
 import sch1z0ed.animals.entity.IAnimal;
-import sch1z0ed.animals.entity.enums.AnimalHeightEnum;
-import sch1z0ed.animals.entity.enums.AnimalTypeEnum;
-import sch1z0ed.animals.entity.enums.AnimalWeightEnum;
 import sch1z0ed.animals.rules.AnimalRule;
 
 import java.io.IOException;
@@ -22,11 +19,7 @@ public class DataReader {
             List<String> lines = Files.readAllLines(Paths.get(filePath));
             for (String line : lines) {
                 String[] properties = line.split(",");
-                // Преобразуем строковые значение в перечисление enum
-                AnimalWeightEnum weight = AnimalWeightEnum.fromValue(properties[0]);
-                AnimalHeightEnum height = AnimalHeightEnum.fromValue(properties[1]);
-                AnimalTypeEnum type = AnimalTypeEnum.fromValue(properties[2]);
-                animals.add(new Animal(weight, height, type));
+                animals.add(new Animal(properties[0], properties[1], properties[2]));
             }
         } catch (IOException e) {
             e.printStackTrace();
